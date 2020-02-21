@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+}
+
+.navbar {
+  overflow: hidden;
+
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+
+position: fixed;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a style="float:left;">Anne Frøyen</a>
+    <a href="#kontakt">Kontakt</a>
+      <a href="#cv">Curriculum Vitae</a>
+  <a href="#designprosjekt">Designprosjekt</a>
+
+  <a href="#utviklingsprosjekt">Utviklingsprosjekt</a>
+
+
+
+
+
+  <div class="dropdown">
+    <button class="dropbtn">Designprosjekt
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Web</a>
+      <a href="#">App</a>
+      <a href="#">Grafisk</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+<p>instagram - facebook - behance - dribble - linkedIn - github</p>
+  Copyright Anne Hjellbrekke Frøyen Company 2019 C</div>
+<img src="bilder/embla.jpg" alt="Embla" style="width: 300px; height: 400px; position:relative"></img>
+</body>
+</html>

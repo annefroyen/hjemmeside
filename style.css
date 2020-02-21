@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  min-height: 1vh;
+}
+
+.navbar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navbar a {
+  font-size: 14px;
+  font-style: Arial;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  bottom: 0px;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
