@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
+   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/font/flaticon.css">
 <link href="https://fonts.googleapis.com/css?family=Inria+Sans:300,400|Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="icon" sizes="76x76" href="https://cdn.elg.im/t-rex/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://cdn.elg.im/t-rex/favicon-16x16.png">
 <title>Anne Frøyen</title>
 </head>
 <body>
@@ -15,16 +14,14 @@
     <div class="navbar-content">
 
 
-      <a href="hjem" style=" font-size:30px;left:0; font-family: 'Press Start 2P', cursive; ">ANNE FRØYEN</a>
+      <span id="annefroyen">Anne Frøyen</span>
       <div class="menu-items-right">
-
-
-      <a href="#hjem">Hjem</a>
-      <a href="#prosjekt">Prosjekt</a>
-      <a href="#ommeg">Om meg</a>
-      <a href="#kontakt">Kontakt</a>
-        </div>
-        </div>
+       <a href="#hjem">HJEM</a>
+       <a href="#prosjekt">PROSJEKT</a>
+       <a href="#ommeg">OM MEG</a>
+       <a href="#kontakt">KONTAKT</a>
+      </div>
+    </div>
   </div>
 
 
@@ -32,15 +29,14 @@
 
   <div class="content">
     <div class="wrapper">
-    <div class="row">
-      <div class="cell">
-        <img src="bilder/embla.jpg" class="kontakt_bilde" kalt="">
+
+<div class="typewriter">
+  <h1>Hei! Mitt navn er Anne og eg er en <span id="webutvikler">webutvikler</span></h1>
+
+
+</div>
       </div>
-      <div class="cell">
-        <p class="overskrift">Velkommne til nettsida mi, eg heiter Anne</p>
-      </div>
-    </div>
-   </div>
+
   </div>
 
 
@@ -49,23 +45,68 @@
 
 <div class="content">
 
-<div class="prosjekt">
+
+
+<div class="prosjekt folk">
+
   <div class="prosjektboks">
-<h2>Hitori</h2>
-  </div>
-  <div class="prosjektTekst">
-    <p>Dette er et prosjekt</p>
+    <h2 class="prosjektOverskrift">FOLK</h2>
 
-  </div>
+    <div class="prosjektTekst">
+      <h3>FOLK</h3>
+      <p>Ei enkel nettside som henter data om norske kommuner frå API.</p>
+
+      <p>Bakgrunn: Skuleoppgåve</p>
+      <p>Verktøy: Atom</p>
+      <p>Språk: Javascript, HTML og CSS</p>
+     <a href="https://github.com/annefroyen/INFO134_Folk" target="_blank" alt="github repo">Github repo</a>
+      <a href="prosjekt/folk.html" target="_blank" alt="nettside">nettside</a>
+
+    </div>
+   </div>
+</div>
+
+<div class="prosjekt framtiden">
+  <div class="prosjektboks">
+    <h2 class="prosjektOverskrift">FRAMTIDEN</h2>
+    <div class="prosjektTekst">
+
+      <h3>FRAMTIDEN I VÅRE HENDER</h3>
+      <p>Redesign av Framtiden i våre hender's nettside og visuelle identitet.</p>
+
+      <p>Bakgrunn: Skuleoppgåve</p>
+      <p>Verktøy: Lookback og Webflow</p>
+      <p>(nettside kjem snart)</p>
+
+
+    </div>
+   </div>
+
 
 </div>
 
-<div class="prosjekt">
-  <h2>Kommunerr</h2>
-</div>
+<div class="prosjekt hitori">
+  <div class="prosjektboks">
+    <h2 class="prosjektOverskrift">HITORI</h2>
 
-<div class="prosjekt">
-  <h2>Hitori</h2>
+    <div class="prosjektTekst">
+
+      <h3>HITORI</h3>
+      <p>Ei nettside som løser hitori-brett.</p>
+
+      <p>Bakgrunn: Kodekonkurranse</p>
+      <p>Verktøy: Eclipse og tomcat server</p>
+      <p>Språk: Java, JSP, html og CSS</p>
+      <a href="https://github.com/annefroyen/Hitori-Game" target="_blank" alt="repo">github repo</a>
+      <a href="hitori.html" target="_blank" alt="demo">demo</a>
+
+
+    </div>
+   </div>
+
+
+
+
 </div>
 
 
@@ -80,35 +121,50 @@
 <div class="row">
   <div class="cell" >
     <h3>FRONTEND</h3>
-    <p>Eg kan frontend og javascript eg er veldig god i.</p>
+    <p>Akuratt nå tar eg et fag om klientsideprogrammering, det har gitt meg en god forståelse for Javascript og HTML/CSS. Eg har deltat på workshops om REACT og håpar å kunne bli kjent med fleire JS-bibliotek i framtida.</p>
   </div>
   <div class="cell">
 
     <h3>BACKEND</h3>
-<p>Eg har jobbet med Java gjennom heile studietida og er trygg på OOP. Har også en grunnleggande forståelse for Funksjonell programmering</p>
+<p>Eg har jobbet med Java gjennom heile studietida og føler meg ganske trygg på OOP. Eg har også en grunnleggande forståelse for funksjonell programmering. Nokre av språka eg fått prøvd ut er C++, C#, Assembly, Bash, windows powershell, SQL og Kotlin.</p>
   </div>
   <div class="cell" lang="no">
     <h3 class="hyphen-me">INTERKAJONSDESIGN</h3>
-    <p>Etter bacheloren min såg eg viktigheten av god design og tok derfor et år på UiB der eg jobbet med fleire Ux-prosjekt</p>
+    <p>Under bacheloren min såg eg viktigheten av god design og bestemte meg derfor for å studere interaksjonsdesign. På campus Media City fikk eg studere tett på mediebedrifter og eg fikk verdifull innsikt i korleis UX blir jobbet med i praksis.</p>
   </div>
   <div class="cell">
     <h3>KUNDEBEHANDLING</h3>
-    <p>Eg har jobbet i service yrker siden ungdomsskulen og er komfortabel med å kommunisere med kunder</p>
+    <p>Eg har jobbet 5 år i bokbutikker og er komfortabel med å kommunisere med kunder. Empatien ovenfor kundene har eg tatt med meg i arbeid med brukeropplevelse og universell utforming</p>
   </div>
 </div>
 </div>
 </div>
 
 <p class="inndeling" id="ommeg">Om meg</p><hr>
+<div class="content wrapper">
+<div class="row">
+
+<div class="cell">
+    <img src="css/bilder/meg.jpg" alt="meg" style="height: 300px; padding-top: 50px">
+        <img src="css/bilder/meg.jpg" alt="meg" style="height: 300px; padding-top: 100px;">
+          <img src="css/bilder/meg.jpg" alt="meg" style="height: 300px; padding-top: 200px;">
+</div>
+
+    <div class="cell">
+      <p>Eg er født og oppvokst i ein dal innerst i Førdefjorden. Studietida har eg brukt i vakre Bergen, men nå ser eg mot Rogaland.
+        På fritida likar eg å gå fjellturar, lese bøker og ete meg gjennom Pedersgata.</p>
+    </div>
+
+</div>
+</div>
 
 <div class="content">
-
   <div class="grid-container">
     <div class="Utdanning cv_headers">
-      <h2>Utdanning</h2>
+      <h2>Skule</h2>
     </div>
     <div class="Erfaring cv_headers">
-      <h2>Erfaring</h2>
+      <h2>Jobb</h2>
     </div>
     <div class="Verv cv_headers">
       <h2>Verv</h2>
@@ -122,7 +178,7 @@
 
 
     <div class="uib cv_boks">
-      <p class="underoverskrift">Bachelor media- og interaksjonsdesign</p>
+      <h3>Bachelor media- og interaksjonsdesign</h3>
       <p class="brodtekst">Universitetet i Bergen</p>
       <p class="brodtekst">2019-dd.</p>
 
@@ -189,18 +245,16 @@
 <p class="inndeling" id="kontakt">Kontakt</p><hr>
 
 <div class="content" id="kontakt_innhold">
-  <a class="underoverskrift" target="_blank" href="mailto:annehjefro@gmail.com">annehjefro@gmail.com</a>
-  <h3>+47 48 30 57 00</h3>
+  <a class="kont" href="mailto: annehjefro@gmail.com">annehjefro@gmail.com</a> <br><br>
+  <a class="kont"  href="tel: 48305700">+47 48 30 57 00</a>
+
 </div>
 
 <div class="footer">
-<a href="https://www.behance.net/annehjellbr" target="_blank" class="footer_icons behance_icon"><i class="flaticon-behance"></i></a>
 <a href="https://github.com/annefroyen" target="_blank" class="footer_icons github_icon"><i class="flaticon-github"></i></a>
 <a href="https://www.linkedin.com/in/anne-fr%C3%B8yen-896704159/" target="_blank" class="footer_icons linkedin_icon"><i class="flaticon-linkedin-1"></i></a>
 <a href="https://www.instagram.com/anne_froyen/" target="_blank" class="footer_icons instagram_icon"><i class="flaticon-instagram"></i></a>
-
-<p>Anne Hjellbrekke Frøyen</p>
-
+<a href="https://www.behance.net/annehjellbr" target="_blank" class="footer_icons behance_icon"><i class="flaticon-behance"></i></a>
 </div>
 
 

@@ -2,24 +2,60 @@
 body {
   font-family: 'Inria Sans', sans-serif;
   margin: 0;
-  margin-top: 200px;
+  margin-top: 65px;
   background-color: #f7f7f7;
 }
 
-.inndeling{
-  font-size: 15px;
-  color: grey;
-  margin-left: 5vw;
+.typewriter{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+.typewriter h1 {
+  font-weight: 300;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+  animation:
+    typing 4.5s steps(30, end),
+    blinking-cursor 1.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
 
 .overskrift{
   font-size: 3vw;
   font-weight: 300;
 }
 
-.underoverskrift{
+.inndeling{
   font-size: 15px;
-  font-weight: bold;
+  color: grey;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+
+
+.kont{
+  font-size: 20px;
 }
 
 .brodtekst{
@@ -28,7 +64,7 @@ body {
 }
 
 .content{
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -36,37 +72,65 @@ body {
 
 }
 .navbar-content{
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+#annefroyen{
+  font-size:20px;
+  left:20px;
+  font-family: 'Press Start 2P';
 }
 .menu-items-right{
   float:right;
 }
 .navbar {
-
-  padding: 3vw;
+  z-index:1;
+  padding: 20px;
   background-color: white;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */;
 }
 
+@media only screen and (max-width: 900px) {
+  .navbar a{
+    display: none;
+  }
+.typewriter h1 {
+  animation: none;
+  white-space: normal;
+  text-align: center;
+  overflow: visible;
+  border-right: none;
+}
+
+
+}
+
 .navbar a {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
 vertical-align: middle;
   color: black;
   padding: 30px;
+
 }
 
 .navbar a:hover{
-  color: green;
+  color: #DF8101;
 }
 
 hr{
   position: relative;
   width: 100%;
 
+}
+
+#webutvikler{
+  text-decoration: underline;
+  -webkit-text-decoration-color: #048BA8;
+  text-decoration-color: #048BA8;
 }
 
 .prosjekt{
@@ -80,64 +144,85 @@ hr{
   margin-bottom: 20px;
 }
 
+.folk{
+  background: url("bilder/kommuner.png") no-repeat ;
+  background-size: auto ;
+ }
+
+.framtiden{
+  background: url("bilder/framtiden.PNG") no-repeat;
+  background-size: auto ;
+  }
+
+.hitori{
+   background: url("bilder/hitori.png");
+   background-size: auto ;
+  }
+
 * {
   box-sizing: border-box;
 }
 
 .prosjektboks {
-  position: absolute;
-  padding: 50px;
+  z-index: 0;
+  position: relative;
+  padding: 20px;
   background-color: white;
   transition: transform .4s;
   transition-delay: 500ms;
   display: flex;
-  width: 400px;
+  width: 60%;
+  height:
   align-items: center; /* vertikal sentrering */
   justify-content: center; /* horisontal sentrering */
   margin: 0 auto;
-  opacity: 0.5;
 }
 
 .prosjektboks h2{
   transition-delay: 500ms;
 }
 
-.prosjekt:hover .prosjektboks {
+.prosjektboks:hover{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
   transition-delay: 0ms;
 
 }
-.prosjekt:hover .prosjektboks h2 {
+.prosjektboks:hover  h2 {
   opacity: 0;
   transition-delay: 0ms;
+}
 
-
+.prosjektOverskrift{
+  position: absolute;
+  font-size: 35px;
+  align-items: center; /* vertikal sentrering */
 
 }
 
 .prosjektTekst{
-position: relative;
-  padding: 50px;
+  position: relative;
+  padding: 20px;
   transition: .4s;
   transition-delay: 0ms;
-  border-style: dotted;
-  display: flex;
+  font-size: 10px;
   align-items: center; /* vertikal sentrering */
   justify-content: center; /* horisontal sentrering */
   margin: 0 auto;
   opacity: 0;
+  text-align: center;
 }
 
-.prosjekt:hover .prosjektTekst{
+.prosjektboks:hover .prosjektTekst{
   opacity: 1;
   transition-delay: 400ms;
+
 }
 
 
 .wrapper {
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
 }
 .row {
@@ -180,7 +265,6 @@ position: relative;
   color: white;
   bottom: 0;
   position: relative;
-  height: 200px;
   width: 100%;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
@@ -221,7 +305,7 @@ background: linear-gradient(0deg, rgba(44,0,77,1) 0%, rgba(149,25,156,1) 100%);
   margin: 10px;
   display: grid;
   grid-template-columns: 5% 31.6% 31.6% 31.6%;
-  grid-template-rows: 10% 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+  grid-template-rows: 4% 9.5% 9.5% 9.5% 9.5% 9.5% 9.5% 9.5% 9.5% 9.5% 9.5%;
   grid-template-areas: ". Utdanning Erfaring Verv" "tjue uib aquacare ." ". uib . ." "nitten hvl akademika ." ". hvl akademika okonomi" "atten hvl norli okonomi" ". hvl norli arrangement" "sytten hvl norli arrangement" ". hvl norli ." "seksten hafstad norli ." ". hafstad norli .";
 }
 
@@ -238,54 +322,55 @@ background: linear-gradient(0deg, rgba(44,0,77,1) 0%, rgba(149,25,156,1) 100%);
   padding: 20px;
   margin: 1vw;
   height:100%;
+  word-wrap: break-word;
 
 }
 
 
 .hvl {
   grid-area: hvl;
-  background-color:#004357;
+  background-color:#DF8101;
   color: white;
 
 }
 
 .uib {
 grid-area: uib;
-  background-color:#cf3c3a;
+  background-color:#F18F01;
   color: white;
  }
 
 .hafstad {
-  background-color:#f2f2f2;
-  color: black;
+  background-color:#CD7201;
+  color: white;
   grid-area: hafstad; }
 
 .aquacare {
-  background-color:#ffffff;
-  color: black;
+  background-color:#048BA8;
+  color: white;
   grid-area: aquacare;
       margin-bottom:900px;
  }
 
 .akademika {
-  background-color: #f2f2f2;
-  color: black;
+  background-color: #047F9B;
+  color: white;
   grid-area: akademika; }
 
 .norli {
-  background-color: #f2f2f2;
-  color: black;
+  background-color: #03738E;
+  color: white;
   grid-area: norli; }
 
 .arrangement {
-  background-color: #4A4A4A;
+  background-color: #293A51;
   color: white;
   grid-area: arrangement;
 
 }
 
 .okonomi {
-  background-color: #4A4A4A;
+  background-color: #2E4057;
   color: white;
    grid-area: okonomi;
 }
