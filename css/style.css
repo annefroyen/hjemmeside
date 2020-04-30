@@ -33,7 +33,13 @@ body {
 
 
 .kont{
-  font-size: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.kont:hover{
+  color: #DF8101;
 }
 
 .brodtekst{
@@ -190,6 +196,25 @@ hr{
   opacity: 1;
   transition-delay: 400ms;
 
+}
+
+@media (max-width: 600px) {
+  .prosjektboks:active{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    transition-delay: 0ms;
+
+  }
+  .prosjektboks:active  h2 {
+    opacity: 0;
+    transition-delay: 0ms;
+  }
+  .prosjektboks:active .prosjektTekst{
+    opacity: 1;
+    transition-delay: 400ms;
+
+  }
 }
 
 
