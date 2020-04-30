@@ -1,5 +1,5 @@
 
-const befolkningUrl = "http://wildboy.uib.no/~tpe056/folk/104857.json";
+const befolkningUrl = "befolkning.json";
 const sysselsatteUrl = "http://wildboy.uib.no/~tpe056/folk/100145.json";
 const utdanningUrl = "http://wildboy.uib.no/~tpe056/folk/85432.json"
 
