@@ -145,17 +145,17 @@ hr{
 }
 
 .folk{
-  background: url("bilder/kommuner.png") no-repeat ;
+  background: url("../bilder/kommuner.png") no-repeat ;
   background-size: auto ;
  }
 
 .framtiden{
-  background: url("bilder/framtiden.PNG") no-repeat;
+  background: url("../bilder/framtiden.PNG") no-repeat;
   background-size: auto ;
   }
 
 .hitori{
-   background: url("bilder/hitori.png");
+   background: url("../bilder/hitori.png");
    background-size: auto ;
   }
 
